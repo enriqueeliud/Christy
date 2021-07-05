@@ -1,0 +1,90 @@
+.skills {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin-top: -1rem;
+}
+
+.skills h1 {
+ background-color: #ff0844;
+ background-image: linear-gradient(to right, #ff0844 10%, #ff0840 100%);
+ background-size: 100%;
+ -webkit-background-clip: text;
+ -moz-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ -moz-text-fill-color: transparent;
+ margin-bottom: .5rem;
+ font-size: 3.5rem;
+}
+.skills_wrapper {
+ display: grid;
+ grid-template-rows: repeat(4, 100px);
+ grid-template-columns: repeat(4, 1fr);
+ grid-gap: 4em 0.5em;
+}
+.skills_card {
+ margin: .8em;
+ height: 20vh;
+ width: 20vw;
+ border-radius: 4px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ color: #fff;
+ transition: 0.3s ease-in;
+}
+
+.skills_card h2 {
+ text-align: start;
+ font-size: 1rem;
+ z-index: 1;
+ color: #20bebe;
+ justify-content: start;
+
+}
+
+.skills_card p {
+ text-align: center;
+ margin-top: 24px;
+ font-size: 20px;
+
+}
+
+.skills_btn {
+ display: flex;
+ justify-content: center;
+ margin-top: 16px;
+}
+
+.skills_card button {
+ color: #fff;
+ padding: 14px 24px;
+ border: none;
+ outline: none;
+ border-radius: 4px;
+ background: #131313;
+ font-size: 1rem;
+}
+
+.skills_card button:hover {
+ cursor: pointer;
+}
+
+.skills_card:hover {
+ transform: scale(1.075);
+ transition: 0.3s ease-in;
+ cursor: pointer;
+}
+
+@media screen and (max-width:1300px) {
+ .skills_wrapper {
+  grid-template-columns: 1fr 1fr;
+ }
+}
+
+@media screen and (max-width:768px) {
+ .skills_wrapper {
+  grid-template-columns: 1fr;
+ }
+}
